@@ -18,7 +18,7 @@ class ModuleMakerController
         return [
             '$view' => [
                 'title' => 'Osa ModuleMaker Management System - OSMS',
-                'name' => 'modulemaker:views\admin\index.php'
+                'name' => 'modulemaker:views\admin\modules.php'
             ],
             '$data' => $config,
             'message' => 'Got Questions?',

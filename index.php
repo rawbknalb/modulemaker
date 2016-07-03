@@ -32,9 +32,12 @@ return [
     ],
 
     'routes' => [
-        '@modulemaker' => [
-            'path' => '/modulemaker',
-            'controller' => 'Osa\\ModuleMaker\\Controller\\ModuleMakerController'
+
+        '/modulemaker' => [
+            'name' => '@modulemaker',
+            'controller' => [
+                'Osa\\ModuleMaker\\Controller\\ModuleMakerController'
+            ]
         ]
     ],
 
@@ -44,7 +47,13 @@ return [
             'url' => '@modulemaker',
             'icon' => 'app/system/assets/images/placeholder-icon.svg'
         ],
+
+        'modulemaker: categories' => [
+			'label' => 'Rubriken',
+			'parent' => 'modulemaker',
+			'url' => '@modulemaker',
+			'access' => 'modulemaker: manage forms',
+			'active' => '@modulemaker(/edit)?'
+		],
     ],
 ];
-
-?>
