@@ -83,7 +83,7 @@ return [
 				//$table->addIndex(['form_id'], 'FORMMAKER_FIELD_FORMID');
 			});
 		}
-        
+
         // exit('stuerb');
     },
 
@@ -93,11 +93,11 @@ return [
         $util = $app['db']->getUtility();
 
         $tables = [
-            '@osa_assessments',
-            '@osa_modules',
-            '@osa_questions',
             '@assessments_modules_mapping',
-            '@users_modules_mapping'
+            '@users_modules_mapping',
+            '@osa_questions',
+            '@osa_assessments',
+            '@osa_modules'
         ];
 
         foreach ($tables as $table) {
