@@ -2,18 +2,6 @@
 
 <div id="modulemaker" class="uk-form uk-form-horizontal" v-cloak>
 
-    <!-- <div class="pk-table-fake pk-table-fake-header" :class="{'pk-table-fake-border': !forms || !forms.length}">
-        <div class="pk-table-width-minimum pk-table-fake-nestable-padding">
-            <input type="checkbox" v-check-all:selected.literal="input[name=id]"></div>
-        <div class="pk-table-min-width-100">{{ 'Title' | trans }}</div>
-        <div class="pk-table-width-100 uk-text-center">{{ 'Status' | trans }}</div>
-        <div class="pk-table-width-150">{{ 'Submissions' | trans }}</div>
-        <div class="pk-table-width-150">{{ 'Plugin code' | trans }}<a class="uk-icon-info uk-icon-hover uk-margin-small-left"
-                data-uk-tooltip="{delay:200}" :title="'Add this code to any Pagekit content to show the form.' | trans"></a></div>
-        <div class="pk-table-width-150">{{ 'Url' | trans }}</div>
-    </div> -->
-
-
     <ul class="uk-list uk-list-space" v-if="entries.length">
         <li class="uk-text-large" v-for="entry in entries" :class="{'uk-text-muted' : entry.done}">
 

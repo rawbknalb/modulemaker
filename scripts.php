@@ -73,6 +73,7 @@ return [
                 $table->addColumn('id', 'integer', ['unsigned' => true, 'length' => 10, 'autoincrement' => true]);
                 $table->addColumn('user_id', 'integer', ['unsigned' => true, 'length' => 10]);
 				$table->addColumn('module_id', 'integer', ['unsigned' => true, 'length' => 10]);
+                $table->addColumn('answers', 'json_array', ['notnull' => false]);
                 $table->addColumn('created_at', 'datetime');
 
                 $table->setPrimaryKey(['id']);
