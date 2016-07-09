@@ -11,7 +11,7 @@ use Pagekit\Database\ORM\ModelTrait;
 /**
  * @Entity(tableClass="@osa_questions")
  */
-class Topic
+class Question
 {
 
     use ModelTrait;

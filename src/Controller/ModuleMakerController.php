@@ -3,6 +3,7 @@
 namespace Osa\ModuleMaker\Controller;
 
 use Pagekit\Application as App;
+use Osa\ModuleMaker\Module;
 
 
 class ModuleMakerController
@@ -35,8 +36,18 @@ class ModuleMakerController
         //To store the entries, we fetch the config-object for our modulemaker-module
         // We set the entries property to be the entries-array which we
         // receive via a request
-        App::config('modulemaker')->set('entries', $entries);
+        // App::db()->insert('@osa_modules', [
+        //     'title' => 'Test',
+        //     'role' => 4
+        // ]);
 
+        // $module = new Module();
+        // $module->title = "bruce";
+        // $module->save();
+
+        // $module = Module::create();
+        
+        App::config('modulemaker')->set('entries', $entries);
         return ['success' => true];
 
     }

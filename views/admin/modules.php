@@ -11,11 +11,11 @@
                     <i class="uk-icon-remove"></i> Remove
                 </button>
             </span>
-            {{ entry.question }}
+            {{ entry.title }}
         </li>
     </ul>
 
-    <h2>{{ '{0} Questions|{1} One Question|]1,Inf[ %count% Questions' | transChoice entries.length {count:entries.length} }}</h2>
+    <h2>{{ '{0} Modules|{1} One Module|]1,Inf[ %count% Modules' | transChoice entries.length {count:entries.length} }}</h2>
 
     <form class="uk-width-large-2-3" @submit="add">
         <input class="uk-input-large uk-width-3-4" placeholder="{{ 'New Question' | trans }}" v-model="newEntry">

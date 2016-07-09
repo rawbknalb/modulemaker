@@ -27,7 +27,7 @@ $(function(){
                     if(!this.newEntry) return;
 
                     this.entries.push({
-                        question: this.newEntry,
+                        title: this.newEntry,
                         done: false
                     });
 
