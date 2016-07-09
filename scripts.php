@@ -74,6 +74,7 @@ return [
                 $table->addColumn('user_id', 'integer', ['unsigned' => true, 'length' => 10]);
 				$table->addColumn('module_id', 'integer', ['unsigned' => true, 'length' => 10]);
                 $table->addColumn('answers', 'json_array', ['notnull' => false]);
+                $table->addColumn('score', 'integer', ['notnull' => false]);
                 $table->addColumn('created_at', 'datetime');
 
                 $table->setPrimaryKey(['id']);
@@ -82,7 +83,7 @@ return [
 				//$table->addIndex(['form_id'], 'FORMMAKER_FIELD_FORMID');
 			});
 		}
-
+        
         // exit('stuerb');
     },
 
